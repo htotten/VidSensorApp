@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.github.htotten.vidsensorapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/flowerface"
+        android:label="VidSensor"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.github.htotten.vidsensorapp.SplashScreen"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.github.htotten.vidsensorapp.MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="VidSensor"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+
+
+        </activity>
+
+    </application>
+
+    <uses-feature android:name="android.hardware.sensor.proximity" />
+    <uses-feature android:name="android.hardware.sensor.gyroscope" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
